@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form method</title>
+</head>
+<body>
+	<form method="post" action="form.php">
+		<table>
+		<tr>
+		<td>enter first name</td>
+		<td>
+			<input type="text" name="first"/>
+		</td>
+		</tr>
+		<tr>
+			<td>enter last name</td>
+			<td>
+				<input type="text" name="last"/>
+			</td>
+		</tr>
+		<tr>
+			<td>select your gender</td>
+			<td>
+				<select name="gender">
+					<option>male</option>
+					<option>female</option>
+					<option>other</option>
+					
+				</select>
+			</td>
+		</tr>
+		<tr>
+		<td>
+		<input type="submit" name="submit" value="add"></td>
+		</tr>
+		</table>
+		<input type="text" value="<?php echo @$text2;?>">
+	</form>
+
+</body>
+</html>
+
